@@ -1,0 +1,50 @@
+# Prerequisites
+*.d
+build/
+vcpkg/
+/vcpkg/
+/coast-tools/
+coast-tools/
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+*.zip
+build/
+log/
+# Precompiled Headers
+# Dossiers
+/build/
+/bin/
+# /lib/
+/out/
+
+
+# Fichiers
+*.exe
+# *.dll
+*.so
+*.dylib
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+# *.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+# *.lib
+
+# Executables
+*.exe
+*.out
+*.app
