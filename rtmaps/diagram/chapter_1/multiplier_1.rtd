@@ -82,12 +82,12 @@
     <Property LongName="Integer_constants_generator_1.outputWhenValueChanges" Type="0">true</Property>
     <Property LongName="Integer_constants_generator_1.vectorSize" Type="1">1</Property>
     <Property LongName="Integer_constants_generator_1.outputPeriod" Type="1">1000000</Property>
-    <Property LongName="Integer_constants_generator_1.value_1" Type="1">2</Property>
+    <Property LongName="Integer_constants_generator_1.value_1" Type="1">1</Property>
     <Property LongName="Integer_constants_generator_1.threaded" Type="0">true</Property>
     <Property LongName="Integer_constants_generator_1.priority" Type="1">128</Property>
     <Property LongName="Integer_constants_generator_1.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="multiplier_1_1" Model="multiplier_1" Version="1.0.0" x="824" y="440" z="0">
+  <Component InstanceName="multiplier_1_1" Model="multiplier_1" Version="1.0.0" x="704" y="440" z="0">
     <Input LongName="multiplier_1_1.input" Name="input">
       <Property LongName="multiplier_1_1.input.readerType" Type="1">0</Property>
       <Property LongName="multiplier_1_1.input.subsampling" Type="1">1</Property>
@@ -105,7 +105,35 @@
   <Connection Output="multiplier_1_1.output" Input="DataViewer_1.input_0"/>
   <Connection Output="Integer_constants_generator_1.output" Input="multiplier_1_1.input"/>
   <RTBoardView ID="JavaStudio1.0">
+    <ComponentBox InstanceName="GPS_Data_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="Image_Left_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="Player_1_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="Right_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="SBG_FrameDecoder_1_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
     <ConnectionShape InstanceName="DataViewer_1.input_0" color="0"/>
+    <ConnectionShape InstanceName="euler_gps_data.input_0" color="0"/>
+    <ConnectionShape InstanceName="euler_gps_data.input_1" color="0"/>
+    <ConnectionShape InstanceName="image_left.input" color="0"/>
+    <ConnectionShape InstanceName="image_right.input" color="0"/>
+    <ConnectionShape InstanceName="imgs_save_debug_1.iEKFEuler" color="0"/>
+    <ConnectionShape InstanceName="imgs_save_debug_1.iGPSPos" color="0"/>
+    <ConnectionShape InstanceName="imgs_save_debug_1.iImgLeft" color="0"/>
+    <ConnectionShape InstanceName="imgs_save_debug_1.iImgRight" color="0"/>
+    <ConnectionShape InstanceName="lane_viewer.input" color="0"/>
     <ConnectionShape InstanceName="multiplier_1_1.input" color="0"/>
+    <ConnectionShape InstanceName="output_image_1.iEKFEuler" color="0"/>
+    <ConnectionShape InstanceName="output_image_1.iGPSPos" color="0"/>
+    <ConnectionShape InstanceName="sbg_frame_decoder.iData" color="0"/>
+    <ConnectionShape InstanceName="SBG_FrameDecoder_1.iData" color="0"/>
   </RTBoardView>
 </RTMapsDiagram>

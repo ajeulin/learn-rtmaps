@@ -10,7 +10,7 @@
 #include "chapter_1/maps_multiplier_1.h"
 /**
  * Chapter 1 - Numeric data handling
- * This chapter ocntains some simple samples that show how to program
+ * This chapter contains some simple samples that show how to program
  * components that deal with numeric data (how to get data an an input,
  * how to access properties, how to provide data on an output).
  * 
