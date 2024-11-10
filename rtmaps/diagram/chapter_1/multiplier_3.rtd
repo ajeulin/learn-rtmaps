@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RTMapsDiagram version="4.8.0" EngineVersion="4.12" xmlns="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles http://www.intempora.com/schemas/RTMaps/2011/RTMapsDiagram.xsd">
+  <RequiredPackages>
+    <File Version="0.0.1"><![CDATA[/opt/rtmaps/packages/learn_rtmaps.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/learn_rtmaps.pck]]></Relative></File>
+  </RequiredPackages>
+  <EngineProperties>
+    <Property LongName="Engine.startTimespeed" Type="1">1000</Property>
+    <Property LongName="Engine.startTime" Type="1">0</Property>
+    <Property LongName="Engine.session" Type="3"><![CDATA[unspecified]]></Property>
+    <Property LongName="Engine.recordingAtStart" Type="0">true</Property>
+    <Property LongName="Engine.recording" Type="0">true</Property>
+    <Property LongName="Engine.sequentialStart" Type="0">false</Property>
+    <Property LongName="Engine.shutdownTimeout" Type="1">10000000</Property>
+    <Property LongName="Engine.autoDetectStartTime" Type="0">true</Property>
+    <Property LongName="Engine.coreFunctionsToSaveInDiag" Type="4"><![CDATA[0|-1]]></Property>
+    <Property LongName="Engine.useUTCTimeReference" Type="0">false</Property>
+    <Property LongName="Engine.fastForwardThreshold" Type="1">2000</Property>
+    <Property LongName="Engine.fastRewindThreshold" Type="1">-2000</Property>
+    <Property LongName="Engine.priorityClass" Type="4"><![CDATA[3|0|Shared Time|Preemptive|Auto]]></Property>
+    <Property LongName="Engine.posixTimerThread" Type="4"><![CDATA[3|0|Auto|Timer Interval|Real Time Clock]]></Property>
+    <Property LongName="Engine.posixRealTimeClockIrqFrequency" Type="4"><![CDATA[4|0|1024|2048|4096|8192]]></Property>
+    <Property LongName="Engine.posixPreemptiveSchedulingPolicy" Type="4"><![CDATA[2|0|FIFO|Round Robin]]></Property>
+    <Property LongName="Engine.windowsUsePerformanceCounter" Type="0">true</Property>
+  </EngineProperties>
+  <ClocksManagement>
+    <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
+  </ClocksManagement>
+  <Component InstanceName="DataViewer_1" Model="DataViewer" Version="2.1.0" x="1312" y="440" z="0">
+    <Input LongName="DataViewer_1.input_0" Name="input_0">
+      <Property LongName="DataViewer_1.input_0.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_1.input_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_1.input_1" Name="input_1">
+      <Property LongName="DataViewer_1.input_1.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_1.input_1.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="DataViewer_1.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_1.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_1.autoDirty" Type="0">true</Property>
+    <Property LongName="DataViewer_1.run" Type="0">true</Property>
+    <Property LongName="DataViewer_1.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="DataViewer_1.moveable" Type="0">true</Property>
+    <Property LongName="DataViewer_1.hidden" Type="0">false</Property>
+    <Property LongName="DataViewer_1.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="DataViewer_1.x" Type="1">1946</Property>
+    <Property LongName="DataViewer_1.y" Type="1">284</Property>
+    <Property LongName="DataViewer_1.width" Type="1">530</Property>
+    <Property LongName="DataViewer_1.height" Type="1">420</Property>
+    <Property LongName="DataViewer_1.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_1.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DataViewer_1.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_1.nbInputs" Type="1">2</Property>
+    <Property LongName="DataViewer_1.compactMode" Type="0">false</Property>
+    <Property LongName="DataViewer_1.showInfo" Type="0">true</Property>
+    <Property LongName="DataViewer_1.showData" Type="0">true</Property>
+    <Property LongName="DataViewer_1.showPrettyTimestamp" Type="0">true</Property>
+    <Property LongName="DataViewer_1.float32Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_1.float64Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_1.integer8Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_1.integer16Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_1.integer32Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_1.integer64Format" Type="3"><![CDATA[%ld]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger8Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger16Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger32Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger64Format" Type="3"><![CDATA[%lu]]></Property>
+    <Property LongName="DataViewer_1.hexDisplay" Type="0">false</Property>
+    <Property LongName="DataViewer_1.internalState" Type="3" SubType="128"><![CDATA[]]></Property>
+    <Property LongName="DataViewer_1.expandedState" Type="3" SubType="128"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="DataViewer_1.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="DataViewer_1.threaded" Type="0">true</Property>
+    <Property LongName="DataViewer_1.priority" Type="1">128</Property>
+    <Property LongName="DataViewer_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Integer_constants_generator_1" Model="Integer_constants_generator" Version="2.5.1" x="320" y="440" z="0">
+    <Output LongName="Integer_constants_generator_1.output" Name="output">
+      <Property LongName="Integer_constants_generator_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="Integer_constants_generator_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="Integer_constants_generator_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Integer_constants_generator_1.outputMode" Type="4"><![CDATA[3|1|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="Integer_constants_generator_1.outputWhenValueChanges" Type="0">true</Property>
+    <Property LongName="Integer_constants_generator_1.vectorSize" Type="1">5</Property>
+    <Property LongName="Integer_constants_generator_1.outputPeriod" Type="1">1000000</Property>
+    <Property LongName="Integer_constants_generator_1.value_1" Type="1">1</Property>
+    <Property LongName="Integer_constants_generator_1.value_2" Type="1">2</Property>
+    <Property LongName="Integer_constants_generator_1.value_3" Type="1">3</Property>
+    <Property LongName="Integer_constants_generator_1.value_4" Type="1">4</Property>
+    <Property LongName="Integer_constants_generator_1.value_5" Type="1">5</Property>
+    <Property LongName="Integer_constants_generator_1.threaded" Type="0">true</Property>
+    <Property LongName="Integer_constants_generator_1.priority" Type="1">128</Property>
+    <Property LongName="Integer_constants_generator_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="multiplier_3_1" Model="multiplier_3" Version="2.0.0" x="776" y="440" z="0">
+    <Input LongName="multiplier_3_1.input" Name="input">
+      <Property LongName="multiplier_3_1.input.readerType" Type="1">0</Property>
+      <Property LongName="multiplier_3_1.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="multiplier_3_1.output" Name="output">
+      <Property LongName="multiplier_3_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="multiplier_3_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="multiplier_3_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="multiplier_3_1.factor" Type="1">2</Property>
+    <Property LongName="multiplier_3_1.threaded" Type="0">true</Property>
+    <Property LongName="multiplier_3_1.priority" Type="1">128</Property>
+    <Property LongName="multiplier_3_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Connection Output="multiplier_3_1.output" Input="DataViewer_1.input_0"/>
+  <Connection Output="Integer_constants_generator_1.output" Input="multiplier_3_1.input"/>
+  <RTBoardView ID="JavaStudio1.0">
+    <ComponentBox InstanceName="GPS_Data_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="Image_Left_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="Player_1_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="Right_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="SBG_FrameDecoder_1_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ConnectionShape InstanceName="DataViewer_1.input_0" color="0"/>
+    <ConnectionShape InstanceName="euler_gps_data.input_0" color="0"/>
+    <ConnectionShape InstanceName="euler_gps_data.input_1" color="0"/>
+    <ConnectionShape InstanceName="image_left.input" color="0"/>
+    <ConnectionShape InstanceName="image_right.input" color="0"/>
+    <ConnectionShape InstanceName="imgs_save_debug_1.iEKFEuler" color="0"/>
+    <ConnectionShape InstanceName="imgs_save_debug_1.iGPSPos" color="0"/>
+    <ConnectionShape InstanceName="imgs_save_debug_1.iImgLeft" color="0"/>
+    <ConnectionShape InstanceName="imgs_save_debug_1.iImgRight" color="0"/>
+    <ConnectionShape InstanceName="lane_viewer.input" color="0"/>
+    <ConnectionShape InstanceName="multiplier_3_1.input" color="0"/>
+    <ConnectionShape InstanceName="output_image_1.iEKFEuler" color="0"/>
+    <ConnectionShape InstanceName="output_image_1.iGPSPos" color="0"/>
+    <ConnectionShape InstanceName="sbg_frame_decoder.iData" color="0"/>
+    <ConnectionShape InstanceName="SBG_FrameDecoder_1.iData" color="0"/>
+  </RTBoardView>
+</RTMapsDiagram>
