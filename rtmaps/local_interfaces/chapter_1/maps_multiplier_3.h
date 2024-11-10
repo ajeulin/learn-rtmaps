@@ -4,7 +4,7 @@
 //      Created by Arthur JEULIN on 11/11/2024.
 // **********************************************************
 //
-// Module : Learn RTMaps Chapter 2 multiplier
+// Module : Learn RTMaps Chapter 3 multiplier
 //
 
 #if defined(_MSC_VER) && (_MSC_VER >= 1200)
@@ -25,7 +25,5 @@ class MAPS_MULTIPLIER_3 : public MAPSComponent
   private:
     std::unique_ptr<MAPS::InputReader> m_input_reader;
 };
-
-
 
 #endif /* MAPS_MULTIPLIER_3_H */
