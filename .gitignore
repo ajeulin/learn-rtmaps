@@ -5,6 +5,7 @@ vcpkg/
 /vcpkg/
 /coast-tools/
 coast-tools/
+*.cfg
 # Compiled Object files
 *.slo
 *.lo
