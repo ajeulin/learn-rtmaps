@@ -95,46 +95,6 @@ if (MSVC)
       # Options pour le mode Release
       target_compile_options(${PCK} PRIVATE /MD /MP /GL /W3 /WX -DNDEBUG)
     endif()
-    # TO IMPROVE IN THE FUTURE
-    # Trouver un moyen de ne pas à copier manuellement le nom des dll
-    # Attention *.dll ne fonctionne pas sur windows
-      add_custom_command(TARGET ${PCK} POST_BUILD
-      # Create the bin folder next to the pck
-      COMMAND ${CMAKE_COMMAND} -E make_directory C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/bin
-      # Copy the dll in the bin folder
-      COMMAND ${CMAKE_COMMAND} -E copy_if_different
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/jpeg62.dll
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/liblzma.dll
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/libpng16.dll
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/libsharpyuv.dll
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/libwebp.dll
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/libwebpdecoder.dll
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/opencv_core4.dll
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/opencv_imgcodecs4.dll
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/opencv_imgproc4.dll
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/tiff.dll
-      # Destination
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/bin
-      
-      # Destination
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/bin
-      
-    # Delete the dll the where in the same folder as CMAKE_RUNTIME_OUTPUT_DIRECTORY
-    COMMAND ${CMAKE_COMMAND} -E remove
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/jpeg62.dll
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/liblzma.dll
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/libpng16.dll
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/libsharpyuv.dll
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/libwebp.dll
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/libwebpdecoder.dll
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/opencv_core4.dll
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/opencv_imgcodecs4.dll
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/opencv_imgproc4.dll
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/tiff.dll
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/tinyxml2.dll
-      C:/dev/rtmaps/user_sdk/packages/${PCK}/$<CONFIG>/zlib1.dll
-      VERBATIM
-      )
       
 endif()
 if(UNIX)
