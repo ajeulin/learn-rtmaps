@@ -30,7 +30,7 @@
  */
 
 MAPS_BEGIN_INPUTS_DEFINITION(MAPS_TRIGGERED)
-  MAPS_INPUT("tiggered",MAPS::FilterInteger32,MAPS::FifoReader)
+  MAPS_INPUT("triggered",MAPS::FilterInteger32,MAPS::FifoReader)
   MAPS_INPUT("sampling",MAPS::FilterInteger32,MAPS::SamplingReader)
 MAPS_END_INPUTS_DEFINITION
 
