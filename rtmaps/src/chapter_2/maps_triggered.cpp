@@ -57,7 +57,7 @@ void MAPS_TRIGGERED::Birth()
 {
   /**
    * Create a enx input reader using the "Triggered" policy.
-   * The "Triggered" policy waits for new data samples tobe available
+   * The "Triggered" policy waits for new data samples to be available
    * on its "trigger" input (which is the "triggered" input in this sample)
    * then, it reads the data samples of the other inputs ("sampling" in this sample)
    * and calls the user-provided callback
@@ -76,7 +76,7 @@ void MAPS_TRIGGERED::Birth()
      * The list of inputs to read.
      * You can pass in any contiguous sequence of "MAPSInput*" elements
      * that can be converted to a "MAPS::ArrayView<MAPSInput*>"
-     * Examples of such sequences are: "std::vector<MAPSInput*>, std::array<MAPSIput*,N>, MAPSInput* someArray[N]"
+     * Examples of such sequences are: "std::vector<MAPSInput*>, std::array<MAPSInput*,N>, MAPSInput* someArray[N]"
      * 
      * Here, we pass a temporary std::array<MAPSInput*,2>
      */

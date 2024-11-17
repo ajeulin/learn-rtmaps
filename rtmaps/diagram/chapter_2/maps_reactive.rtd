@@ -91,23 +91,24 @@
     <Property LongName="input_2.priority" Type="1">255</Property>
     <Property LongName="input_2.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="maps_reactive_1" Model="maps_reactive" Version="1.0.0" x="992" y="376" z="0">
-    <Input LongName="maps_reactive_1.input_1" Name="input_1">
-      <Property LongName="maps_reactive_1.input_1.readerType" Type="1">0</Property>
-      <Property LongName="maps_reactive_1.input_1.subsampling" Type="1">1</Property>
+  <Component InstanceName="maps_PERIODIC_SAMPLING_1" Model="maps_PERIODIC_SAMPLING" Version="1.0.0" x="992" y="376" z="0">
+    <Input LongName="maps_PERIODIC_SAMPLING_1.sampling_1" Name="sampling_1">
+      <Property LongName="maps_PERIODIC_SAMPLING_1.sampling_1.readerType" Type="1">4</Property>
+      <Property LongName="maps_PERIODIC_SAMPLING_1.sampling_1.subsampling" Type="1">1</Property>
     </Input>
-    <Input LongName="maps_reactive_1.input_2" Name="input_2">
-      <Property LongName="maps_reactive_1.input_2.readerType" Type="1">0</Property>
-      <Property LongName="maps_reactive_1.input_2.subsampling" Type="1">1</Property>
+    <Input LongName="maps_PERIODIC_SAMPLING_1.sampling_2" Name="sampling_2">
+      <Property LongName="maps_PERIODIC_SAMPLING_1.sampling_2.readerType" Type="1">4</Property>
+      <Property LongName="maps_PERIODIC_SAMPLING_1.sampling_2.subsampling" Type="1">1</Property>
     </Input>
-    <Output LongName="maps_reactive_1.output" Name="output">
-      <Property LongName="maps_reactive_1.output.subsampling" Type="1">1</Property>
-      <Property LongName="maps_reactive_1.output.fifosize" Type="1">16</Property>
-      <Property LongName="maps_reactive_1.output.periodic" Type="0">false</Property>
+    <Output LongName="maps_PERIODIC_SAMPLING_1.output" Name="output">
+      <Property LongName="maps_PERIODIC_SAMPLING_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="maps_PERIODIC_SAMPLING_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="maps_PERIODIC_SAMPLING_1.output.periodic" Type="0">false</Property>
     </Output>
-    <Property LongName="maps_reactive_1.threaded" Type="0">true</Property>
-    <Property LongName="maps_reactive_1.priority" Type="1">128</Property>
-    <Property LongName="maps_reactive_1.autoStart" Type="0">true</Property>
+    <Property LongName="maps_PERIODIC_SAMPLING_1.sampling_period" Type="1">100000</Property>
+    <Property LongName="maps_PERIODIC_SAMPLING_1.threaded" Type="0">true</Property>
+    <Property LongName="maps_PERIODIC_SAMPLING_1.priority" Type="1">128</Property>
+    <Property LongName="maps_PERIODIC_SAMPLING_1.autoStart" Type="0">true</Property>
   </Component>
   <Component InstanceName="output_rate" Model="SampleRate" Version="2.3.1" x="1400" y="528" z="0">
     <Input LongName="output_rate.input" Name="input">
@@ -182,10 +183,10 @@
     <Property LongName="view_output.priority" Type="1">128</Property>
     <Property LongName="view_output.autoStart" Type="0">true</Property>
   </Component>
-  <Connection Output="input_1.outputInteger" Input="maps_reactive_1.input_1"/>
-  <Connection Output="input_2.outputInteger" Input="maps_reactive_1.input_2"/>
-  <Connection Output="maps_reactive_1.output" Input="output_rate.input"/>
-  <Connection Output="maps_reactive_1.output" Input="view_output.input_0"/>
+  <Connection Output="input_1.outputInteger" Input="maps_PERIODIC_SAMPLING_1.sampling_1"/>
+  <Connection Output="input_2.outputInteger" Input="maps_PERIODIC_SAMPLING_1.sampling_2"/>
+  <Connection Output="maps_PERIODIC_SAMPLING_1.output" Input="output_rate.input"/>
+  <Connection Output="maps_PERIODIC_SAMPLING_1.output" Input="view_output.input_0"/>
   <Connection Output="output_rate.sampleRateOutput" Input="view_output.input_1"/>
   <RTBoardView ID="JavaStudio1.0">
     <ComponentBox InstanceName="input_1_1" reversed="false">
@@ -194,8 +195,8 @@
     <ComponentBox InstanceName="Integer_constants_generator_1_1" reversed="false">
       <Description/>
     </ComponentBox>
-    <ConnectionShape InstanceName="maps_reactive_1.input_1" color="0"/>
-    <ConnectionShape InstanceName="maps_reactive_1.input_2" color="0"/>
+    <ConnectionShape InstanceName="maps_PERIODIC_SAMPLING_1.sampling_1" color="0"/>
+    <ConnectionShape InstanceName="maps_PERIODIC_SAMPLING_1.sampling_2" color="0"/>
     <ConnectionShape InstanceName="maps_trigger_1.tiggered" color="0"/>
     <ConnectionShape InstanceName="output_rate.input" color="0"/>
     <ConnectionShape InstanceName="view_output.input_0" color="0"/>
