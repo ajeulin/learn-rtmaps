@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RTMapsDiagram version="4.8.0" EngineVersion="4.12" xmlns="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles http://www.intempora.com/schemas/RTMaps/2011/RTMapsDiagram.xsd">
+  <RequiredPackages>
+    <File Version="0.0.1"><![CDATA[/opt/rtmaps/packages/learn_rtmaps.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/learn_rtmaps.pck]]></Relative></File>
+  </RequiredPackages>
+  <EngineProperties>
+    <Property LongName="Engine.startTimespeed" Type="1">1000</Property>
+    <Property LongName="Engine.startTime" Type="1">0</Property>
+    <Property LongName="Engine.session" Type="3"><![CDATA[unspecified]]></Property>
+    <Property LongName="Engine.recordingAtStart" Type="0">true</Property>
+    <Property LongName="Engine.recording" Type="0">true</Property>
+    <Property LongName="Engine.sequentialStart" Type="0">false</Property>
+    <Property LongName="Engine.shutdownTimeout" Type="1">10000000</Property>
+    <Property LongName="Engine.autoDetectStartTime" Type="0">true</Property>
+    <Property LongName="Engine.coreFunctionsToSaveInDiag" Type="4"><![CDATA[0|-1]]></Property>
+    <Property LongName="Engine.useUTCTimeReference" Type="0">false</Property>
+    <Property LongName="Engine.fastForwardThreshold" Type="1">2000</Property>
+    <Property LongName="Engine.fastRewindThreshold" Type="1">-2000</Property>
+    <Property LongName="Engine.priorityClass" Type="4"><![CDATA[3|0|Shared Time|Preemptive|Auto]]></Property>
+    <Property LongName="Engine.posixTimerThread" Type="4"><![CDATA[3|0|Auto|Timer Interval|Real Time Clock]]></Property>
+    <Property LongName="Engine.posixRealTimeClockIrqFrequency" Type="4"><![CDATA[4|0|1024|2048|4096|8192]]></Property>
+    <Property LongName="Engine.posixPreemptiveSchedulingPolicy" Type="4"><![CDATA[2|0|FIFO|Round Robin]]></Property>
+    <Property LongName="Engine.windowsUsePerformanceCounter" Type="0">true</Property>
+  </EngineProperties>
+  <ClocksManagement>
+    <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
+  </ClocksManagement>
+  <Component InstanceName="input_1" Model="Randint" Version="6.5" x="424" y="272" z="0">
+    <Output LongName="input_1.outputInteger" Name="outputInteger">
+      <Property LongName="input_1.outputInteger.subsampling" Type="1">1</Property>
+      <Property LongName="input_1.outputInteger.fifosize" Type="1">16</Property>
+      <Property LongName="input_1.outputInteger.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="input_1.outputFloat" Name="outputFloat">
+      <Property LongName="input_1.outputFloat.subsampling" Type="1">1</Property>
+      <Property LongName="input_1.outputFloat.fifosize" Type="1">16</Property>
+      <Property LongName="input_1.outputFloat.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="input_1.outputAscii" Name="outputAscii">
+      <Property LongName="input_1.outputAscii.subsampling" Type="1">1</Property>
+      <Property LongName="input_1.outputAscii.fifosize" Type="1">16</Property>
+      <Property LongName="input_1.outputAscii.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="input_1.outputIntegerVector" Name="outputIntegerVector">
+      <Property LongName="input_1.outputIntegerVector.subsampling" Type="1">1</Property>
+      <Property LongName="input_1.outputIntegerVector.fifosize" Type="1">16</Property>
+      <Property LongName="input_1.outputIntegerVector.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="input_1.outputFloatVector" Name="outputFloatVector">
+      <Property LongName="input_1.outputFloatVector.subsampling" Type="1">1</Property>
+      <Property LongName="input_1.outputFloatVector.fifosize" Type="1">16</Property>
+      <Property LongName="input_1.outputFloatVector.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="input_1.period" Type="1">5000000</Property>
+    <Property LongName="input_1.max" Type="1">100</Property>
+    <Property LongName="input_1.vectorSize" Type="1">1</Property>
+    <Property LongName="input_1.threaded" Type="0">true</Property>
+    <Property LongName="input_1.priority" Type="1">255</Property>
+    <Property LongName="input_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="input_2" Model="Randint" Version="6.5" x="424" y="496" z="0">
+    <Output LongName="input_2.outputInteger" Name="outputInteger">
+      <Property LongName="input_2.outputInteger.subsampling" Type="1">1</Property>
+      <Property LongName="input_2.outputInteger.fifosize" Type="1">16</Property>
+      <Property LongName="input_2.outputInteger.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="input_2.outputFloat" Name="outputFloat">
+      <Property LongName="input_2.outputFloat.subsampling" Type="1">1</Property>
+      <Property LongName="input_2.outputFloat.fifosize" Type="1">16</Property>
+      <Property LongName="input_2.outputFloat.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="input_2.outputAscii" Name="outputAscii">
+      <Property LongName="input_2.outputAscii.subsampling" Type="1">1</Property>
+      <Property LongName="input_2.outputAscii.fifosize" Type="1">16</Property>
+      <Property LongName="input_2.outputAscii.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="input_2.outputIntegerVector" Name="outputIntegerVector">
+      <Property LongName="input_2.outputIntegerVector.subsampling" Type="1">1</Property>
+      <Property LongName="input_2.outputIntegerVector.fifosize" Type="1">16</Property>
+      <Property LongName="input_2.outputIntegerVector.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="input_2.outputFloatVector" Name="outputFloatVector">
+      <Property LongName="input_2.outputFloatVector.subsampling" Type="1">1</Property>
+      <Property LongName="input_2.outputFloatVector.fifosize" Type="1">16</Property>
+      <Property LongName="input_2.outputFloatVector.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="input_2.period" Type="1">2500000</Property>
+    <Property LongName="input_2.max" Type="1">100</Property>
+    <Property LongName="input_2.vectorSize" Type="1">1</Property>
+    <Property LongName="input_2.threaded" Type="0">true</Property>
+    <Property LongName="input_2.priority" Type="1">255</Property>
+    <Property LongName="input_2.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="maps_PERIODIC_SAMPLING_1" Model="maps_PERIODIC_SAMPLING" Version="1.0.0" x="992" y="376" z="0">
+    <Input LongName="maps_PERIODIC_SAMPLING_1.sampling_1" Name="sampling_1">
+      <Property LongName="maps_PERIODIC_SAMPLING_1.sampling_1.readerType" Type="1">4</Property>
+      <Property LongName="maps_PERIODIC_SAMPLING_1.sampling_1.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="maps_PERIODIC_SAMPLING_1.sampling_2" Name="sampling_2">
+      <Property LongName="maps_PERIODIC_SAMPLING_1.sampling_2.readerType" Type="1">4</Property>
+      <Property LongName="maps_PERIODIC_SAMPLING_1.sampling_2.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="maps_PERIODIC_SAMPLING_1.output" Name="output">
+      <Property LongName="maps_PERIODIC_SAMPLING_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="maps_PERIODIC_SAMPLING_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="maps_PERIODIC_SAMPLING_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="maps_PERIODIC_SAMPLING_1.sampling_period" Type="1">1000000</Property>
+    <Property LongName="maps_PERIODIC_SAMPLING_1.threaded" Type="0">true</Property>
+    <Property LongName="maps_PERIODIC_SAMPLING_1.priority" Type="1">128</Property>
+    <Property LongName="maps_PERIODIC_SAMPLING_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="output_rate" Model="SampleRate" Version="2.3.1" x="1400" y="528" z="0">
+    <Input LongName="output_rate.input" Name="input">
+      <Property LongName="output_rate.input.readerType" Type="1">0</Property>
+      <Property LongName="output_rate.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="output_rate.sampleRateOutput" Name="sampleRateOutput">
+      <Property LongName="output_rate.sampleRateOutput.subsampling" Type="1">1</Property>
+      <Property LongName="output_rate.sampleRateOutput.fifosize" Type="1">16</Property>
+      <Property LongName="output_rate.sampleRateOutput.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="output_rate.bandwidthOutput" Name="bandwidthOutput">
+      <Property LongName="output_rate.bandwidthOutput.subsampling" Type="1">1</Property>
+      <Property LongName="output_rate.bandwidthOutput.fifosize" Type="1">16</Property>
+      <Property LongName="output_rate.bandwidthOutput.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="output_rate.verboseSampleRate" Type="0">true</Property>
+    <Property LongName="output_rate.outputSampleRate" Type="0">true</Property>
+    <Property LongName="output_rate.verboseWarnings" Type="0">false</Property>
+    <Property LongName="output_rate.outputWarnings" Type="0">false</Property>
+    <Property LongName="output_rate.expectedSampleRate" Type="1">25</Property>
+    <Property LongName="output_rate.expectedSampleRateTolerance" Type="1">5</Property>
+    <ReadOnlyProperty LongName="output_rate.sampleRate" Type="1">4</ReadOnlyProperty>
+    <Property LongName="output_rate.threaded" Type="0">true</Property>
+    <Property LongName="output_rate.priority" Type="1">128</Property>
+    <Property LongName="output_rate.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="view_output" Model="DataViewer" Version="2.1.0" x="1736" y="376" z="0">
+    <Input LongName="view_output.input_0" Name="input_0">
+      <Property LongName="view_output.input_0.readerType" Type="1">4</Property>
+      <Property LongName="view_output.input_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="view_output.input_1" Name="input_1">
+      <Property LongName="view_output.input_1.readerType" Type="1">4</Property>
+      <Property LongName="view_output.input_1.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="view_output.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="view_output.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="view_output.autoDirty" Type="0">true</Property>
+    <Property LongName="view_output.run" Type="0">true</Property>
+    <Property LongName="view_output.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="view_output.moveable" Type="0">true</Property>
+    <Property LongName="view_output.hidden" Type="0">false</Property>
+    <Property LongName="view_output.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="view_output.x" Type="1">389</Property>
+    <Property LongName="view_output.y" Type="1">795</Property>
+    <Property LongName="view_output.width" Type="1">530</Property>
+    <Property LongName="view_output.height" Type="1">420</Property>
+    <Property LongName="view_output.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="view_output.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="view_output.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="view_output.nbInputs" Type="1">2</Property>
+    <Property LongName="view_output.compactMode" Type="0">false</Property>
+    <Property LongName="view_output.showInfo" Type="0">true</Property>
+    <Property LongName="view_output.showData" Type="0">true</Property>
+    <Property LongName="view_output.showPrettyTimestamp" Type="0">true</Property>
+    <Property LongName="view_output.float32Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="view_output.float64Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="view_output.integer8Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="view_output.integer16Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="view_output.integer32Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="view_output.integer64Format" Type="3"><![CDATA[%ld]]></Property>
+    <Property LongName="view_output.unsignedInteger8Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="view_output.unsignedInteger16Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="view_output.unsignedInteger32Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="view_output.unsignedInteger64Format" Type="3"><![CDATA[%lu]]></Property>
+    <Property LongName="view_output.hexDisplay" Type="0">false</Property>
+    <Property LongName="view_output.internalState" Type="3" SubType="128"><![CDATA[238;282]]></Property>
+    <Property LongName="view_output.expandedState" Type="3" SubType="128"><![CDATA[1|maps_PERIODIC_SAMPLING_1.output;0|Info:maps_PERIODIC_SAMPLING_1.output;1|Data:maps_PERIODIC_SAMPLING_1.output;1|output_rate.sampleRateOutput;0|Info:output_rate.sampleRateOutput;1|Data:output_rate.sampleRateOutput]]></Property>
+    <ReadOnlyProperty LongName="view_output.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="view_output.threaded" Type="0">true</Property>
+    <Property LongName="view_output.priority" Type="1">128</Property>
+    <Property LongName="view_output.autoStart" Type="0">true</Property>
+  </Component>
+  <Connection Output="input_1.outputInteger" Input="maps_PERIODIC_SAMPLING_1.sampling_1"/>
+  <Connection Output="input_2.outputInteger" Input="maps_PERIODIC_SAMPLING_1.sampling_2"/>
+  <Connection Output="maps_PERIODIC_SAMPLING_1.output" Input="output_rate.input"/>
+  <Connection Output="maps_PERIODIC_SAMPLING_1.output" Input="view_output.input_0"/>
+  <Connection Output="output_rate.sampleRateOutput" Input="view_output.input_1"/>
+  <RTBoardView ID="JavaStudio1.0">
+    <ComponentBox InstanceName="input_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="Integer_constants_generator_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ConnectionShape InstanceName="maps_PERIODIC_SAMPLING_1.sampling_1" color="0"/>
+    <ConnectionShape InstanceName="maps_PERIODIC_SAMPLING_1.sampling_2" color="0"/>
+    <ConnectionShape InstanceName="maps_trigger_1.tiggered" color="0"/>
+    <ConnectionShape InstanceName="output_rate.input" color="0"/>
+    <ConnectionShape InstanceName="view_output.input_0" color="0"/>
+    <ConnectionShape InstanceName="view_output.input_1" color="0"/>
+  </RTBoardView>
+</RTMapsDiagram>
