@@ -66,7 +66,7 @@ void MAPS_TRIGGERED::Birth()
     this,
     // The input reader will first wait for data on this input
     Input("triggered"),
-    // Triggered::DataInput means that we want to acces the "value" of the data of the trigger
+    // Triggered::TriggerKind::DataInput means that we want to access the "value" of the data of the trigger
     // input in the callback. In this case, the trigger input MUST be added to the list of data inputs
     MAPS::InputReaderOption::Triggered::TriggerKind::DataInput,
     // SamplingBehavior::WaitForAllInputs means that the data callback will be called
